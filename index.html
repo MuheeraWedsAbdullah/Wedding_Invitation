@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muheera & Abdullah — Wedding Invitation</title>
+  <meta name="description" content="You are invited to celebrate the wedding of Isabella & Alexander." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Opening / Loading Screen -->
+  <div id="loader" class="loader" aria-hidden="false">
+    <div class="loader__inner">
+      <div class="loader__flourish" aria-hidden="true"></div>
+      <p class="loader__eyebrow">Together with their families</p>
+      <h1 class="loader__names">
+        <span class="script">Muheera Aslam</span>
+        <span class="loader__amp">&</span>
+        <span class="script">Abdullah Sulatan</span>
+      </h1>
+      <p class="loader__date">November 14, 2026</p>
+      <div class="loader__ring" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <!-- Floating particles -->
+  <canvas id="particles" class="particles" aria-hidden="true"></canvas>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero__bg" data-parallax></div>
+      <div class="hero__veil"></div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">The Wedding of</p>
+        <h1 class="hero__names">
+          <span class="script">Muheera Aslam</span>
+          <span class="hero__amp">&</span>
+          <span class="script">Abdullah Sultan</span>
+        </h1>
+        <p class="hero__tagline">Join us as we begin our forever</p>
+      </div>
+      <a href="#our-day" class="hero__scroll" aria-label="Scroll to Our Special Day">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- Our Special Day -->
+    <section class="section our-day" id="our-day">
+      <div class="section__bg section__bg--soft" data-parallax-slow></div>
+      <div class="container reveal">
+        <p class="section__eyebrow">A celebration of love</p>
+        <h2 class="section__title">Our Special Day</h2>
+        <div class="flourish" aria-hidden="true"></div>
+        <p class="our-day__text">
+          With joyful hearts, we invite you to share in the celebration of our marriage.
+          Your presence will make this day even more meaningful as we promise a lifetime
+          of love, laughter, and adventure together.
+        </p>
+        <p class="our-day__quote script">“Two souls, one heart, forever.”</p>
+      </div>
+    </section>
+
+<!-- =========================================
+     BARAT INVITATION
+========================================= -->
+
+<section class="section invitation-image-section barat" id="barat">
+
+  <div class="section__bg section__bg--soft" data-parallax-slow></div>
+
+  <div class="container reveal">
+
+    <p class="section__eyebrow">
+      With joyful hearts
+    </p>
+
+    <h2 class="section__title">
+      Barat Invitation
+    </h2>
+
+    <div class="flourish" aria-hidden="true"></div>
+
+    <div class="invitation-image-wrap">
+      <img
+        src="images/barat-card.png"
+        alt="Barat Wedding Invitation"
+        class="invitation-image"
+      />
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================================
+     WALIMA INVITATION
+========================================= -->
+
+<section class="section invitation-image-section walima" id="walima">
+
+  <div class="section__bg section__bg--soft" data-parallax-slow></div>
+
+  <div class="container reveal">
+
+    <p class="section__eyebrow">
+      A beautiful new beginning
+    </p>
+
+    <h2 class="section__title">
+      Walima Invitation
+    </h2>
+
+    <div class="flourish" aria-hidden="true"></div>
+
+    <div class="invitation-image-wrap">
+      <img
+        src="images/walima-card.jpeg"
+        alt="Walima Wedding Invitation"
+        class="invitation-image"
+      />
+    </div>
+
+  </div>
+
+</section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__names script">Muheera & Abdullah</p>
+      <p class="footer__date">November 14, 2026</p>
+      <p class="footer__copy">With love — we can’t wait to celebrate with you</p>
+    </div>
+  </footer>
+
+  <!-- Gallery lightbox -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button type="button" class="lightbox__close" id="lightboxClose" aria-label="Close">&times;</button>
+    <img src="" alt="" id="lightboxImg" />
+  </div>
+
+  <!-- RSVP success popup -->
+  <div class="modal" id="rsvpModal" hidden>
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__panel glass" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button type="button" class="modal__close" data-close-modal aria-label="Close">&times;</button>
+      <div class="modal__flourish" aria-hidden="true"></div>
+      <h3 id="modalTitle" class="modal__title script">Thank you</h3>
+      <p class="modal__text" id="modalText">Your RSVP has been received. We look forward to celebrating with you.</p>
+      <button type="button" class="btn btn--gold" data-close-modal>Close</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
